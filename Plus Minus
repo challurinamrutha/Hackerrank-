@@ -1,0 +1,28 @@
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main()  {
+    int X,Y[100],wTemp;
+    float minus = 0,zeroes = 0,plus = 0;
+    scanf("%d",&X);
+    for(wTemp=0;wTemp<X;wTemp++)
+    {
+        scanf("%d",&Y[wTemp]);
+        if(Y[wTemp] > 0)
+        {
+            plus++;
+        }
+        else if(Y[wTemp] == 0)
+        {
+            zeroes++;
+        }
+        else 
+        {
+            minus++;
+        }
+    }
+    printf("%.3f\n%.3f\n%.3f\n",plus/X,minus/X, zeroes/X);
+    
+return 0;
+}
