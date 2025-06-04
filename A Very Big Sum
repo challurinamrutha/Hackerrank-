@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<math.h>
+#include<string.h>
+#include<stdlib.h>
+int main(){
+    long long int arr[10];
+    int p,i;
+    scanf("%d",&p);
+    long long int sum;
+    sum=0;
+    for(i=0;i<p;i++)
+        scanf("%lli",&arr[i]);
+        for(i=0;i<p;i++)
+        {
+            sum=sum+arr[i];
+        }
+        printf("%lli",sum);
+        return 0;
+}
