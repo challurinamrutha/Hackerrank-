@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<math.h>
+#include<stdlib.h>
+#include<string.h>
+int main()
+{
+    int p,q[100][100],i,j,a=0,b=0,difference;
+    scanf("%d",&p);
+    for(i=0;i<p;i++)
+    {
+        for(j=0;j<p;j++)
+        {
+            scanf("%d",&q[i][j]);
+            if(i==j)
+            a=a+q[i][j];
+            if(i==(p-j-1))
+            b=b+q[i][j];
+        }
+    }
+    difference=abs(a-b);
+    printf("%d",difference);
+    return 0;
+}
